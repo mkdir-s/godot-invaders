@@ -32,7 +32,7 @@ animations = [{
 sprite_frames = SubResource("SpriteFrames_wxftl")
 animation = &"new_animation"
 autoplay = "new_animation"
-frame_progress = 0.476427
+frame_progress = 0.95352
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_54jtu")

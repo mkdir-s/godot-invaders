@@ -1,3 +1,54 @@
-[gd_scene format=3 uid="uid://dfs37vu0vxupn"]
+[gd_scene load_steps=5 format=3 uid="uid://dfs37vu0vxupn"]
+
+[ext_resource type="Texture2D" uid="uid://drnslwr1gira5" path="res://assets/Space_Stars2.png" id="1_gen41"]
+[ext_resource type="PackedScene" uid="uid://ctegldb7asrvp" path="res://elements/space_ship/space_ship.tscn" id="2_q5mhm"]
+[ext_resource type="PackedScene" uid="uid://hjht2m4yjmb4" path="res://elements/wall/wall.tscn" id="3_ajh6u"]
+[ext_resource type="PackedScene" uid="uid://dkjk3xxj05woy" path="res://elements/enemy/enemy.tscn" id="4_5ouch"]
 
 [node name="Game" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(128, 120)
+texture = ExtResource("1_gen41")
+region_enabled = true
+region_rect = Rect2(2.08165e-12, 2.08165e-12, 256, 240)
+
+[node name="spaceShip" parent="." instance=ExtResource("2_q5mhm")]
+position = Vector2(-3, 116)
+
+[node name="wall" parent="." instance=ExtResource("3_ajh6u")]
+
+[node name="wall2" parent="." instance=ExtResource("3_ajh6u")]
+position = Vector2(256, 2.08165e-12)
+
+[node name="enemy" parent="." instance=ExtResource("4_5ouch")]
+position = Vector2(45, 46)
+
+[node name="enemy2" parent="." instance=ExtResource("4_5ouch")]
+position = Vector2(75, 46)
+
+[node name="enemy3" parent="." instance=ExtResource("4_5ouch")]
+position = Vector2(105, 47)
+
+[node name="enemy4" parent="." instance=ExtResource("4_5ouch")]
+position = Vector2(136, 46)
+
+[node name="enemy5" parent="." instance=ExtResource("4_5ouch")]
+position = Vector2(166, 46)
+
+[node name="enemy6" parent="." instance=ExtResource("4_5ouch")]
+position = Vector2(196, 46)
+
+[node name="enemy7" parent="." instance=ExtResource("4_5ouch")]
+position = Vector2(178, 78)
+
+[node name="enemy8" parent="." instance=ExtResource("4_5ouch")]
+position = Vector2(140, 79)
+
+[node name="enemy9" parent="." instance=ExtResource("4_5ouch")]
+position = Vector2(104, 79)
+
+[node name="enemy10" parent="." instance=ExtResource("4_5ouch")]
+position = Vector2(67, 79)
