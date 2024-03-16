@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctegldb7asrvp"]
+
+[ext_resource type="Texture2D" uid="uid://cdx74i82lwofg" path="res://assets/space_ship.png" id="1_nb2ld"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kburs"]
+radius = 17.0
+height = 34.0
+
+[node name="spaceShip" type="CharacterBody2D"]
+
+[node name="SpaceShip" type="Sprite2D" parent="."]
+position = Vector2(127, 89)
+texture = ExtResource("1_nb2ld")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(127, 90)
+shape = SubResource("CapsuleShape2D_kburs")
